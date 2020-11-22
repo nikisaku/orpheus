@@ -1,0 +1,3 @@
+aiocron
+discord
+python-dotenv
