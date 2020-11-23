@@ -1,5 +1,5 @@
-2020-12-01;Web Accessibility to dziedzina wiedzy zajmuj¹ca siê tematem dostêpnoœci stron internetowych oraz aplikacji dla osób wykluczonych cyfrowo (np. osób niepe³nosprawnych).
-2020-12-02;Web Accessibility: Do osób wykluczonych cyfrowo zaliczamy: niepe³nosprawnych sensorycznie, niepe³nosprawnych manualnie, niepe³nosprawnych intelektualnie, obcokrajowców, seniorów, ludzi s³abo wykszta³conych, osoby niezamo¿ne.
+"""01.12.2020""";"""Web Accessibility to dziedzina wiedzy zajmuj¹ca siê tematem dostêpnoœci stron internetowych oraz aplikacji dla osób wykluczonych cyfrowo (np. osób niepe³nosprawnych)."""
+"""02.12.2020""";"""Web Accessibility: Do osób wykluczonych cyfrowo zaliczamy: niepe³nosprawnych sensorycznie, niepe³nosprawnych manualnie, niepe³nosprawnych intelektualnie, obcokrajowców, seniorów, ludzi s³abo wykszta³conych, osoby niezamo¿ne."""
 2020-12-03;Web Accessibility: Standard WCAG (Web Content Accessibility Guidelines) - zasady, którymi powinno siê kierowaæ w trakcie tworzenia strony internetowej/aplikacji, aby by³a dostêpna dla osób wykluczonych cyfrowo.
 2020-12-04;Web Accessibility: Zachowanie kolejnoœci nag³ówków jest wa¿ne, aby zosta³y one prawid³owo odczytane przez czytniki dla osób niewidomych. H1 to nazwa strony/podstrony i powinien byæ tylko jeden na stronie. H2 to sekcje, a H3 to podsekcje.
 2020-12-05;Web Accessibility: W trakcie tworzenia treœci na stronê za³ó¿, ¿e wszystkie bêd¹ mo¿liwe do przeczytania ze zrozumieniem przez dzieci w wieku oko³o 9 lat. Jest to zwi¹zane z wykluczeniem cyfrowym np. ludzi s³abo wykszta³conych.
