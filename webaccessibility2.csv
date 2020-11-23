@@ -1,0 +1,31 @@
+2020-12-01;Web Accessibility to dziedzina wiedzy zajmuj¥ca si© tematem dost©pno˜ci stron internetowych oraz aplikacji dla os¢b wykluczonych cyfrowo (np. os¢b niepeˆnosprawnych).
+2020-12-02;Web Accessibility: Do os¢b wykluczonych cyfrowo zaliczamy: niepeˆnosprawnych sensorycznie, niepeˆnosprawnych manualnie, niepeˆnosprawnych intelektualnie, obcokrajowc¢w, senior¢w, ludzi sˆabo wyksztaˆconych, osoby niezamo¾ne.
+2020-12-03;Web Accessibility: Standard WCAG (Web Content Accessibility Guidelines) - zasady, kt¢rymi powinno si© kierowa† w trakcie tworzenia strony internetowej/aplikacji, aby byˆa dost©pna dla os¢b wykluczonych cyfrowo.
+2020-12-04;Web Accessibility: Zachowanie kolejno˜ci nagˆ¢wk¢w jest wa¾ne, aby zostaˆy one prawidˆowo odczytane przez czytniki dla os¢b niewidomych. H1 to nazwa strony/podstrony i powinien by† tylko jeden na stronie. H2 to sekcje, a H3 to podsekcje.
+2020-12-05;Web Accessibility: W trakcie tworzenia tre˜ci na stron© zaˆ¢¾, ¾e wszystkie b©d¥ mo¾liwe do przeczytania ze zrozumieniem przez dzieci w wieku okoˆo 9 lat. Jest to zwi¥zane z wykluczeniem cyfrowym np. ludzi sˆabo wyksztaˆconych.
+2020-12-06;Web Accessibility: Linki powinny si© wyr¢¾nia† w˜r¢d tekstu, kt¢ry je otacza. Jednak samo wyr¢¾nienie ich za pomoc¥ koloru to za maˆo, dlatego wykorzystaj do tego dodatkowo np. podkre˜lenie po najechaniu na nie kursorem.
+2020-12-07;Web Accessibility: Tytuˆ strony/podstrony jest pierwszym tekstem, kt¢ry jest odczytywany przez lektora programu czytaj¥cego. Z tego powodu powinien on by† unikalny oraz sensowny.
+2020-12-08;Web Accessibility: U¾ytkownikowi b©dzie ˆatwiej porusza† si© po serwisie, je¾eli elementy (linki) nawigacji na podstronach b©d¥ prezentowane w tej samej kolejno˜ci.
+2020-12-09;Web Accessibility: Strona powinna zosta† zakodowana w taki spos¢b, aby jej obsˆuga byˆa mo¾liwa za pomoc¥ klawiatury. Zwr¢† uwag© na to, ¾e jej u¾ytkownikiem mo¾e by† r¢wnie¾ osoba, dla kt¢rej korzystanie z myszki jest niekomfortowe z powodu niepeˆnosprawno˜ci.
+2020-12-10;Web Accessibility: Je¾eli tekst zawiera sˆowo, kt¢re mo¾e dla cz©˜ci czytelnik¢w nie by† zrozumiaˆe, warto doda† jego wyja˜nienie np. w formie opisu lub linku do sˆownika.
+2020-12-11;Web Accessibility: Warto na stronie umie˜ci† mechanizm pozwalaj¥cy u¾ytkownikowi na stopniowe powi©kszenie rozmiaru czcionki. Przykˆadowo: czcionka domy˜lna (A) - 12px, czcionka ˜rednia (A+) - 14px, czcionka du¾a (A++) - 16px.
+2020-12-12;Web Accessibility: Gˆ¢wny j©zyk strony powinien zosta† okre˜lony za pomoc¥ atrybutu lang w HTML.
+2020-12-13;Web Accessibility: Je¾eli element (np. cytat) posiada tre˜† w j©zyku innym ni¾ gˆ¢wny strony, nale¾y to zaznaczy† za pomoc¥ atrybutu lang.
+2020-12-14;Web Accessibility: Projektuj¥c instrukcje wymagaj¥ce od u¾ytkownika wykonania jakiej˜ czynno˜ci, warto zwr¢ci† uwag© na to, czy dla ka¾dego jest ona w r¢wnym stopniu wykonalna. Przykˆadowo podajemy instrukcj© 'kliknij czerwone k¢ˆko, aby zamkn¥† okno dialogowe', ale czy osoba niewidoma b©dzie wiedziaˆa, gdzie jest to czerwone k¢ˆko?
+2020-12-15;Web Accessibility: Zawarto˜† strony powinna si© dobrze wy˜wietla† bez wzgl©du na orientacj© (pionow¥ lub poziom¥). Wyj¥tkiem jest sytuacja, w kt¢rej okre˜lenie orientacji jest niezb©dne.
+2020-12-16;Web Accessibility: Dla u¾ytkownik¢w niewidomych d«wi©ki pojawiaj¥ce si© na stronie (np. z reklamy, kt¢ra poka¾e si© po jej zaˆadowaniu) b©d¥ nakˆada† si© na gˆos lektora programu czytaj¥cego. Dlatego warto da† u¾ytkownikowi mo¾liwo˜† wˆ¥czenia/wyˆ¥czenia automatycznie odtwarzanych d«wi©k¢w.
+2020-12-17;Web Accessibility: Strona internetowa powinna by† czytelna oraz funkcjonalna nawet po powi©kszeniu jej na przykˆad do rozmiaru 200%. Oznacza to, ¾e tekst oraz elementy strony powinny by† dobrze widoczne i nie znika† poza kraw©dzie okna przegl¥darki.
+2020-12-18;Web Accessibility: W przypadku formularzy powinno zapewni† si© jasne komunikaty tekstowe o braku wypeˆnienia wymaganego pola lub o bˆ©dzie.
+2020-12-19;Web Accessibility: Je¾eli znajomo˜† wymowy sˆowa jest niezb©dna do jego zrozumienia, powinno si© j¥ zapewni† po tym sˆowie lub w postaci linku do sˆownika.
+2020-12-20;Web Accessibility: Do materiaˆ¢w d«wi©kowych warto doda† transkrypcj© opisow¥, aby zapewni† u¾ytkownikom gˆuchym dost©p do zamieszczonych tre˜ci. Materiaˆami d«wi©kowymi na stronie mog¥ by† np. podcasty.
+2020-12-21;Web Accessibility: Zabezpieczenie antyspamowe CAPTCHA powinno pozwala† na odczytanie ci¥gu znak¢w poprzez obrazek oraz w formie pliku audio.
+2020-12-22;Web Accessibility: Linki powinny zosta† opisane w taki spos¢b, aby u¾ytkownik wiedziaˆ dok¥d zostanie przeniesiony po klikni©ciu.
+2020-12-23;Web Accessibility: Dodanie tekstu alternatywnego (atrybutu alt) do zdj©cia sprawi, ¾e osoba niewidoma dowie si©, co dane zdj©cie przedstawia.
+2020-12-24;Web Accessibility: Je¾eli obrazek jest linkiem, ale wyst©puje wraz z przylegaj¥cym do niego tekstem, to atrybut alt musi by† pusty (' '). 
+2020-12-25;Web Accessibility: Przesˆanie danych z wypeˆnionego formularza powinno by† ˜wiadomym dziaˆaniem ze strony u¾ytkownika. Nale¾y unika† jego automatycznego wysyˆania. 
+2020-12-26;Web Accessibility: Je¾eli strona znajduje si© w serwisie o skomplikowanej strukturze, powinno wskaza† si© jej aktualne poˆo¾enie. Mo¾na to zrobi† na przykˆad za pomoc¥ tzw. nawigacji okruszkowej (ang. breadcrumb).
+2020-12-27;Web Accessibility: Je¾eli strona ma limit czasowy na wykonanie jakiego˜ zadania, powinna zosta† zapewniona mo¾liwo˜† jego wyˆ¥czenia, ustawienia lub zwi©kszenia. Wyj¥tkiem s¥ zdarzenia zachodz¥ce w czasie rzeczywistym, np. aukcje.
+2020-12-28;Web Accessibility: Komunikaty, alarmy i aktualizacje powinny posiada† mechanizm, kt¢ry pozwala na ich odˆo¾enie w czasie lub wyˆ¥czenie.
+2020-12-29;Web Accessibility: Je¾eli czas sesji autoryzowanej przez u¾ytkownika si© skoäczyˆ, powinien on mie† mo¾liwo˜† kontynuowania czynno˜ci bez utraty danych z aktualnej strony.
+2020-12-30;Web Accessibility: Bloki tekstu o dˆugo˜ci ponad jednego zdania powinny posiada† interlini© (co najmniej 1,5-krotno˜ci rozmiaru czcionki).
+2020-12-31;Web Accessibility: Bloki tekstu o dˆugo˜ci ponad jednego zdania nie powinny by† wyjustowane (wyr¢wnane marginesy lewy i prawy). Pozwoli to u¾ytkownikowi z problemami poznawczymi, trudno˜ciami w uczeniu si© lub z wad¥ wzroku na ˆatwiejsze odczytanie tekstu.
