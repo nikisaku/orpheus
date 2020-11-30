@@ -27,7 +27,7 @@ async def cronjob1():
     today = datetime.date.today().strftime('%Y-%m-%d')
     theme = advent_calendar[today]
     for channel_id in channel_ids:
-        await client.get_channel(channel_id).send(f"Today's theme is {theme}")
+        await client.get_channel(channel_id).send(f"Dzisiejszy temat to {theme}.")
 
 @client.event
 async def on_ready():
