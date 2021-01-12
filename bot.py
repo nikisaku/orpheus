@@ -47,9 +47,9 @@ async def cronjob2():
         await client.get_channel(channel_id).send(trivia_of_the_day)
 
 
-@aiocron.crontab('45 10 * * tue,thu')
+@aiocron.crontab('45 10 * * 3,5')
 async def cronjob3():
-    today = datetime.date.today().strftime('%Y-%m-%d')
+    datetime.date.today().strftime('%Y-%m-%d')
     for channel_id in channel_ids:
         await client.get_channel(channel_id).send("Za kwadrans kawka na głosowym! ☕")
 
@@ -67,7 +67,6 @@ async def on_ready():
                     trivia_channel_ids.append(channel.id)
                 if 'wydarzenia' in channel.name:
                     await cronjob3()
-
 
 
 client.run(TOKEN)
