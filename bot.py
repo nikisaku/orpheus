@@ -48,16 +48,16 @@ async def cronjob2():
         await client.get_channel(channel_id).send(trivia_of_the_day)
 
 
-@aiocron.crontab('45 10 * * 3,5')
+@aiocron.crontab('45 10 * * 2,4')
 async def cronjob3():
     for channel_id in events_channel_ids:
         await client.get_channel(channel_id).send("Za kwadrans kawka na kanale głosowym Relaks! ☕")
 
 
-@aiocron.crontab('0 11 * * 3,5')
+@aiocron.crontab('0 11 * * 2,4')
 async def cronjob4():
     for channel_id in channel_ids:
-        await client.get_channel(channel_id).send("Zapraszamy na kawę na kanał głosowym Relaks! ☕")
+        await client.get_channel(channel_id).send("Zapraszamy na kanał głosowy Relaks na wspólną kawę! ☕")
 
 
 @client.event
