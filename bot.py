@@ -56,7 +56,7 @@ async def cronjob3():
 
 @aiocron.crontab('0 11 * * 2,4')
 async def cronjob4():
-    for channel_id in channel_ids:
+    for channel_id in events_channel_ids:
         await client.get_channel(channel_id).send("Zapraszamy na kanał głosowy Relaks na wspólną kawę! ☕")
 
 
