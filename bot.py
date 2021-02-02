@@ -27,9 +27,10 @@ for file_to_read in files_to_read:
         for line in csv_reader:
             trivia[line[0]] = line[1]
 
-
 channel_ids = []
 trivia_channel_ids = []
+events_channel_ids = []
+
 
 @aiocron.crontab('15 5 * * *')
 async def cronjob1():
@@ -38,12 +39,26 @@ async def cronjob1():
     for channel_id in channel_ids:
         await client.get_channel(channel_id).send(f"Dzisiejszy temat to: {theme}")
 
+
 @aiocron.crontab('0 7 * * *')
 async def cronjob2():
     today = datetime.date.today().strftime('%Y-%m-%d')
     trivia_of_the_day = trivia[today]
     for channel_id in trivia_channel_ids:
         await client.get_channel(channel_id).send(trivia_of_the_day)
+
+
+@aiocron.crontab('45 10 * * 2,4')
+async def cronjob3():
+    for channel_id in events_channel_ids:
+        await client.get_channel(channel_id).send("Za kwadrans kawka na kanale głosowym Relaks! ☕")
+
+
+@aiocron.crontab('0 11 * * 2,4')
+async def cronjob4():
+    for channel_id in events_channel_ids:
+        await client.get_channel(channel_id).send("Zapraszamy na kanał głosowy Relaks na wspólną kawę! ☕")
+
 
 @client.event
 async def on_ready():
@@ -56,5 +71,8 @@ async def on_ready():
                     channel_ids.append(channel.id)
                 if 'ciekawostka-dnia' in channel.name:
                     trivia_channel_ids.append(channel.id)
+                if 'wydarzenia' in channel.name:
+                    events_channel_ids.append(channel.id)
+
 
 client.run(TOKEN)
