@@ -9,6 +9,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
+VERIFICATION_MESSAGE_ID = 820693368182013952
+VERIFICATION_ROLE_ID = 820690464100581377
 
 client = discord.Client()
 
@@ -30,6 +32,7 @@ for file_to_read in files_to_read:
 channel_ids = []
 trivia_channel_ids = []
 events_channel_ids = []
+roles_channel_ids = []
 
 
 @aiocron.crontab('15 5 * * *')
@@ -60,6 +63,34 @@ async def cronjob4():
         await client.get_channel(channel_id).send("Zapraszamy na kanał głosowy Relaks na wspólną kawę! ☕")
 
 
+
+def compare_emojis(reaction_emoji):
+    return reaction_emoji.name == "🔑"
+
+@client.event
+async def on_raw_reaction_add(reaction):
+    print("tutaj")
+    print(reaction.emoji.name)
+    if reaction.message_id != 820693368182013952:
+        return
+    if compare_emojis(reaction.emoji):
+        verification_role = discord.utils.get(reaction.member.guild.roles, id=VERIFICATION_ROLE_ID)
+        await reaction.member.add_roles(verification_role)
+        print("role added")
+
+@client.event
+async def on_raw_reaction_remove(reaction):
+    if reaction.message_id != 820693368182013952:
+        return
+    if compare_emojis(reaction.emoji):
+        # guild_id + user_id -> member.id / member object
+        guild = client.get_guild(reaction.guild_id)
+        member = discord.utils.get(guild.members, id=reaction.user_id)
+        # member = client.get_member(reaction.user_id)
+        verification_role = discord.utils.get(guild.roles, id=VERIFICATION_ROLE_ID)
+        await member.remove_roles(verification_role)
+        print("role removed")
+
 @client.event
 async def on_ready():
     global channel_ids
@@ -73,6 +104,16 @@ async def on_ready():
                     trivia_channel_ids.append(channel.id)
                 if 'wydarzenia' in channel.name:
                     events_channel_ids.append(channel.id)
+                if 'role' in channel.name:
+                    roles_channel_ids.append(channel.id)
+                    try:
+                        msg = await channel.fetch_message(VERIFICATION_MESSAGE_ID)
+                        print(msg.content)
+                    except discord.NotFound:
+                        # TODO zmień na coś lepszego
+                        print("Wiadomość weryfikacyjna o tym ID nie istnieje")
+                    # await client.get_channel(channel.id).send("bot is online")
+
 
 
 client.run(TOKEN)
